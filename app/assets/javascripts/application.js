@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require raphael
+//= require raphael-animated-viewbox
+//= require percolator-canvas.js
+//= require percolator
 //= require_tree .

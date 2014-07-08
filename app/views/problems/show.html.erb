@@ -1,0 +1,36 @@
+<%= javascript_tag do %>
+    window.data = '<%=j @problem %>'
+<% end %>
+
+<div id="canvas_container"></div>
+<div id="chart-popup">
+    <div id="bubble-container">
+    </div>
+    <div id="problem-container" class="hidden">
+
+        <h3>Synopsis</h3>
+        <div id="synopsis"></div>
+        <button type="button" id="back">BACK</button>
+        <button type="button" id="render-solution-form">PERCOLATE</button>
+        <div>
+            <span class="upvote" id="upvote">
+                <image src="<%= image_path "thumbs-up.png" %>"/>
+            </span>
+            <span id="count"></span>
+            <span class="downvote" id="downvote">
+                <image src="<%= image_path "thumbs-down.png" %>"/><br>
+            </span>
+        </div>
+
+    </div>
+
+    <div id="disqus_thread"></div>
+</div>
+
+<div id="solution-form">
+    <%= render '/solutions/form' %>
+</div>
+
+<div id="improvement-form">
+    <%= render '/improvements/form' %>
+</div>

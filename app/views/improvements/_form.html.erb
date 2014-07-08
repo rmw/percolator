@@ -1,0 +1,9 @@
+<%= form_tag(class: "improvement") do %>
+  <p>What's your problem?</p><br>
+  <%= label_tag :title, "Improvement Title" %><br>
+  <%= text_field_tag :improvement_title %><br>
+
+  <%= label_tag :description, "Description" %> <br>
+  <%= text_field_tag :improvement_description %><br>
+  <%= submit_tag "Improve", :class => "Improve" %>
+<% end %>

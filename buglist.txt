@@ -1,0 +1,13 @@
+---------
+ buglist
+---------
+
+- back button fails sometimes
+
+- sometimes solution nodes disappear after zooming out
+
+- weird display for problem view
+
+- sometimes it takes a refresh after loading the graphic view
+
+- extra scroll space (on my computer) below nodes
